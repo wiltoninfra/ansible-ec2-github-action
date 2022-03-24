@@ -1,0 +1,11 @@
+# action.yml
+name: 'ansible-playbook-run-aws-instances'
+description: 'Ansible and AWS CLI tools from using in pipelines'
+author: 'Wilton Guilherme'
+branding:
+  icon: 'box'
+  color: 'purple'
+  
+runs:
+  using: 'docker'
+  image: 'Dockerfile' 

@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: yes
+  become_user: root
+
+  roles:
+    - role: filebeat
+
+  vars:
+    es_version: 8.1.0

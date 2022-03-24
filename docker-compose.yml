@@ -1,0 +1,16 @@
+version: '3.3'
+
+services:
+  action:
+    build: .
+    environment:
+      - ANSIBLE_CONFIG=/ansible/ansible.cfg
+      - AWS_REGION=us-east-1
+      - AWS_ACCESS_KEY=
+      - AWS_SECRET_KEY=
+      - AWS_SESSION_TOKEN=
+      - TAG_KEY=Name
+      - TAG_VALUE=myapp
+      - ROLE=filebeat
+    volumes:
+      - ./ansible:/ansible 

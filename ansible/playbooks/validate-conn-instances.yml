@@ -1,0 +1,7 @@
+---
+- name: Validate connection instances 
+  hosts: all
+  become_method: sudo
+  tasks:
+    - name: Check if host is accessible
+      ansible.builtin.ping:
